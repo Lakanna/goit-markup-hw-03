@@ -17,6 +17,9 @@ button{
 }
 ul, ol {
     list-style-type: none;
+    margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
 }
 h1{
     font-weight: 700;
@@ -26,27 +29,62 @@ h1{
     letter-spacing: 0.02em;
     color: var(--white-background);
 }
-.address{
-    font-style: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .link{
     text-decoration: none;
-}
-.main{
-    background-color: var(--dark-color);
-}
-.main-title{
-    font-weight: 700;
-    font-size: 56px;
-    text-align: center;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: var(--white-background)
 }
 
 .list{
     list-style: none;
 }
+.container{
+    width: 1128px;
+    margin: 0 auto;
+    padding: 120px 15px;
+}
+
+.visually-hidden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+/*  header  */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 15px;
+    border-bottom: 4px var(--accent-color);
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+.header-list{
+    display: flex;
+    gap: 40px;
+}
+.address{
+    font-style: normal;
+}
+
 .nav-list{
     font-weight: 500;
     font-size: 16px;
@@ -82,6 +120,7 @@ h1{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand);
+    margin-right: 76px;
     
 }
 .accent{
@@ -91,7 +130,33 @@ h1{
     color: var(--light-color);
 }
 
+/* main */
+.main {
+    
+    background-color: var(--dark-color);
+}
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 188px 0;
+    margin: 0 auto;
+}
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    text-align: center;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    max-width: 496px;
+    color: var(--white-background)
+
+}
 .order-button{
+    display: flex;
+    padding: 16px 32px;
+    border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -105,7 +170,17 @@ h1{
 .order-button:focus{
     background-color: var(--pressed-state);
 }
-.featur{
+.featur-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 8px;
+      /* padding-top: 120px 0; */
+}
+.featur-item{
+    width: calc((100% - 24px) / 4);
+}
+.featur-name{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -127,10 +202,24 @@ h1{
    text-align: center;
    letter-spacing: 0.02em;
    text-transform: capitalize;
-   color: var(--dark-color); 
+   color: var(--dark-color);
+   margin-bottom: 72px; 
+}
+.what{
+   padding-top: 0 0;
+   margin-bottom: 120px;
+}
+.our-deal{
+    display: flex;
+    gap: 24;
+    justify-content: space-between;
 }
 .our-team{
     background-color: var(--light-color);
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
 }
 .team-mates{
  font-weight: 500;
@@ -169,6 +258,11 @@ h1{
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
+}
+.foter{
+    /* flex-direction: row; */
+    max-width: 264px;
+    /* justify-content: flex-end; */
 }
 .page-footer{
     background-color: var(--dark-color);
