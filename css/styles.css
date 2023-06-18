@@ -247,6 +247,10 @@ p {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
+    padding: 12px 24px;
+}
+.button-filtr:last-child{
+    margin-right: 24px;
 }
 .button-filtr:hover,
 .button-filtr:focus{
@@ -287,4 +291,14 @@ p {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
+}
+.button-list{
+    display: flex;
+    /* gap: 8px; */
+    /* justify-content: space-between; */
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100%-2*24)/3);
 }
