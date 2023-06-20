@@ -18,17 +18,10 @@ button{
 ul, ol {
     list-style-type: none;
     margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 0;
+    margin-bottom: 0;
+     padding-left: 0;
 }
-h1{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--white-background);
-}
+
 h1,
 h2,
 h3,
@@ -38,6 +31,22 @@ h6,
 p {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+img{
+    display: block;
+}
+h1{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-background);
+}
+a{
+    text-decoration: none;
 }
 .link{
     text-decoration: none;
@@ -49,7 +58,7 @@ p {
 .container{
     width: 1128px;
     margin: 0 auto;
-    padding: 120px 15px;
+    padding: 0 15px;
 }
 
 .visually-hidden{
@@ -67,21 +76,22 @@ p {
 
 /*  header  */
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 15px;
-    border-bottom: 4px var(--accent-color);
+  padding: 24px 0;
+ border-bottom: 1px solid var(--accent-color);
 }
 .header-nav{
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
+   
 }
 .header-list{
     display: flex;
     gap: 40px;
 }
 .address{
+    display: flex;
+    align-items: center;
     font-style: normal;
 }
 
@@ -156,6 +166,7 @@ p {
 .order-button{
     display: flex;
     padding: 16px 32px;
+    border: none;
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -263,27 +274,39 @@ p {
     text-align: center;
     letter-spacing: 0.04em;
 }
-.foter{
-    /* flex-direction: row; */
-    max-width: 264px;
-    /* justify-content: flex-end; */
-}
+
 .page-footer{
     background-color: var(--dark-color);
+    padding: 100px 0;
 }
+.nav-logo .foter{
+display: inline-block;
+margin-right: 0;
+margin-bottom: 16px;
+}
+
 .footer-text{
+    max-width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color)
+  
 }
+.portfolio-card{
+    padding: 32px 16px;
+    border: 1px solid var(--accent-color);
+    border-top: none;
+}
+
 .portfolio-list-item{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--dark-color);
+        margin-bottom: 8px;
 }
 .portfolio-list-app{
     font-weight: 400;
