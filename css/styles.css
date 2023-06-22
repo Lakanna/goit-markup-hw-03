@@ -98,6 +98,7 @@ a{
     align-items: center;
     padding: 24px 0;
     justify-content: flex-end;
+    gap: 40px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -237,6 +238,9 @@ a{
     gap: 24px;
     /* justify-content: space-between; */
 }
+.our-deal-item{
+    width: calc((100%-24px*2))/3;
+}
 .our-team{
     background-color: var(--light-color);
     padding-top: 120px;
@@ -245,21 +249,23 @@ a{
 .team-list{
     display: flex;
     flex-wrap: wrap;
-    width: calc((100%-3*24)/4);
+    
     /* justify-content: space-between; */
 
     gap: 24px;
 }
 .team-mates{
+    text-align: center;
  font-weight: 500;
  font-size: 20px;
  line-height: 1.2;
  letter-spacing: 0.02em;
  color: var(--dark-color);
- margin-top: 32px;
+ /* margin-top: 32px; */
  margin-bottom: 8px;   
 }
 .prof{
+    text-align: center;
    font-weight: 400;
    font-size: 16px;
    line-height: 1.5;
@@ -273,36 +279,13 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px; */
+    width: calc((100%-3*24)/4);
 }
-.button-filtr{
-    background-color: var(--light-color);
-    color: var(--primary-brand);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-    padding: 12px 24px;
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
+.mates{
+    padding: 32px 16px;
 }
-.button-filtr:last-child{
-    margin-right: 24px;
-}
-.button-filtr:hover,
-.button-filtr:focus{
-    background-color: var(--pressed-state);
-    color: var(--white-background);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-    border: 1px solid transparent:
-}
+
 
 .page-footer{
     background-color: var(--dark-color);
@@ -324,18 +307,23 @@ margin-bottom: 16px;
   color: var(--light-color)
   
 }
-
+.section-portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    width: calc((100%-24*2)/3);
     gap: 24px;
     row-gap: 48px;
     /* padding-top: 72px; */
-    padding-bottom: 120px;
-    
+    /* padding-bottom: 120px; */
+ }
 
+.portfolio-item{
+width: calc((100%-24*2)/3);
 }
+
 .portfolio-card{
     padding: 32px 16px;
     border: 1px solid var(--accent-color);
@@ -357,12 +345,42 @@ margin-bottom: 16px;
         letter-spacing: 0.02em;
         color: var(--text-color);
 }
+.button-filtr {
+    background-color: var(--light-color);
+    color: var(--primary-brand);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+}
+
+.button-filtr:last-child {
+    /* margin-right: 24px; */
+}
+
+.button-filtr:hover,
+.button-filtr:focus {
+    background-color: var(--pressed-state);
+    color: var(--white-background);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border: 1px solid transparent;
+}
 .button-list{
     display: flex;
     justify-content: center;
-    padding-top: 96px;
+    /* padding-top: 96px; */
     margin-bottom: 72px;
-    /* gap: 8px; */
+    gap: 24px;
     /* justify-content: space-between; */
 }
 .portfolio-list{
