@@ -75,13 +75,13 @@ a{
 }
 .head{
     display: flex;
-    align-items: center;
+        align-items: center;}
    
 .header-nav{
     display: flex;
     align-items: center;
-       
-}
+       }
+
 .header-list{
     display: flex;
     gap: 40px;
