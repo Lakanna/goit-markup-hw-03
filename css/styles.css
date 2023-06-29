@@ -270,18 +270,26 @@ a{
 }
 .social-list{
     display: flex;
-    justify-content: space-between;
-    /* align-items: baseline; */
+    gap: 24px;
+   
 }
 .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--primary-brand);
 }
 .social-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand);
     display: inline-block;
-    justify-content: center;
+   
+     
 }
 .team-mates{
     text-align: center;
@@ -320,9 +328,6 @@ a{
     padding: 120px 0;
 }
 
-
-
-
 .clients-list {
     display: flex;
     justify-content: center;
@@ -341,7 +346,7 @@ a{
 
     border: 2px solid var(--light-slate);
     border-radius: 4px;
-    fill: var(--light-slate);
+    /* fill: var(--light-slate); */
 }
 
 .clients-link:hover {
@@ -354,20 +359,6 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-.customers-list{
-    display: flex;
-
-}
 .page-footer{
     background-color: var(--dark-color);
     padding: 100px 0;
@@ -391,6 +382,11 @@ margin-bottom: 16px;
   letter-spacing: 0.02em;
   color: var(--light-color)
   
+}
+
+.social-list-foot{
+display: flex;
+gap: 16px;
 }
 .social-text{
     font-size: 16px;
